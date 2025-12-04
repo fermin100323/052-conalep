@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Video de Mantenimiento</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 { margin: 0; }
+
+    .contenido {
+      flex: 1;
+      text-align: center;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .descripcion {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .video-container {
+      background: white;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      max-width: 800px;
+      margin: auto;
+    }
+
+    video {
+      width: 100%;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    /* Botón regresar */
+    .btn-regresar {
+      display: inline-block;
+      margin-top: 30px;
+      background: #00a84f;
+      color: white;
+      padding: 14px 28px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .btn-regresar:hover {
+      background: #00833e;
+    }
+
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Video del Mantenimiento Realizado</h1>
+</header>
+
+<div class="contenido">
+  <p class="descripcion">
+    A continuación se muestra el video donde se explica y demuestra el proceso de mantenimiento realizado al equipo de cómputo.
+  </p>
+
+  <div class="video-container">
+    <!-- CAMBIA video.mp4 POR TU VIDEO -->
+    <video controls>
+      <source src="video/video1.mp4" type="video/mp4">
+      Tu navegador no soporta reproducción de video.
+    </video>
+  </div>
+
+  <!-- Botón regresar -->
+  <a href="index.html" class="btn-regresar">⬅ Regresar al Inicio</a>
+</div>
+
+<footer>
+  <p>&copy; 2025 Conalep 052</p>
+</footer>
+
+</body>
+</html>

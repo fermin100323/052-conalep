@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conalep 052</title>
+
+  <style>
+    :root {
+      --verde: #000000;
+      --gris-claro: #f0f4f8;
+      --blanco: #ffffff;
+      --sombra: rgba(0, 0, 0, 0.1);
+    }
+
+    
+    html, body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden; 
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--gris-claro);
+      color: #333;
+    }
+
+    
+    nav {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.55);
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 20;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 15px; 
+      backdrop-filter: blur(4px);
+    }
+
+    .nav-logo img {
+      height: 45px;
+      max-width: 100%;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: nowrap;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      white-space: nowrap;
+    }
+
+    .nav-icons a img {
+      width: 22px;
+      height: 22px;
+    }
+
+    
+    header {
+      background-image: url('kok.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 60vh;
+      min-height: 480px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 90px 15px 0;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0,0,0,0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.6rem;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    
+    .section {
+      padding: 60px 20px 30px;
+      text-align: center;
+    }
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    @media (min-width: 768px) {
+      .features {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+
+    .feature {
+      background-color: var(--blanco);
+      padding: 30px 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px var(--sombra);
+      transition: transform 0.3s;
+      min-height: 360px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: justify;
+      width: 100%;
+      max-width: 260px;
+      margin: auto;
+    }
+
+    .feature:hover {
+      transform: translateY(-7px);
+    }
+
+    .icon-container {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 15px;
+    }
+
+    .icon-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .feature h3 {
+      text-align: center;
+      color: var(--verde);
+      margin-bottom: 10px;
+    }
+
+    .feature button {
+      margin-top: 18px;
+      background-color: var(--verde);
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 25px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .feature button:hover {
+      background-color: #004d2b;
+    }
+
+    footer {
+      background-color: #000000;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="nav-logo">
+    <img src="conalep.png" alt="Logo Conalep">
+  </div>
+  <div class="nav-links">
+    <a href="https://www.conalep.edu.mx/blogs-grid">Noticias</a>
+    <a href="">Tema 1</a>
+
+    <div class="nav-icons">
+      <a href="https://www.facebook.com/p/Conalep-Plantel-052-C%C3%A1rdenas-100087362920226/?locale=es_LA">
+        <img src="facebook.png" alt="Facebook">
+      </a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="hero-content">
+    <h1>MANTENIMIENTO DE EQUIPO DE COMPUTO</h1>
+    <p>Formando profesionales técnicos con compromiso social, habilidades tecnológicas y visión de futuro.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="features">
+
+    <div class="feature">
+      <div class="icon-container"><img src="mantenimiento.jpg" width="200" height="200"></div>
+      <h3>Mantenimiento basico</h3>
+      <p></p>
+      <button onclick="location.href='manteni.html'">Ingresar</button>
+    </div>
+    <div class="feature">
+      <div class="icon-container"><img src="imagenes/a17.jpg" alt=""></div>
+      <h3>Video</h3>
+      <p></p>
+      <button onclick="location.href='video.html'">Ingresar</button>
+    </div>
+
+
+    <div class="feature">
+      <div class="icon-container"><img src="a1.jpg" alt=""></div>
+      <h3>Manual</h3>
+      <p></p>
+      <button onclick="location.href='manual.html'">Ingresar</button>
+    </div>
+
+   
+
+   
+  </div>
+</section>
+
+<footer>
+  <p>Correo: contacto@conalep052.edu.mx</p>
+  <p>Teléfono: 937 372 0255</p>
+  <p>Dirección: Profa. Rosario Gil González, Cárdenas Centro, México, 86500</p>
+  <p>&copy; 2025 Conalep 052</p>
+</footer>
+
+</body>
+</html>

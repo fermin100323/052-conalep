@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Descargar PDF</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #000000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .contenido {
+      flex: 1;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      max-width: 500px;
+      margin: auto;
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+      color: #000;
+    }
+
+    .card p {
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+
+    .btn-descargar {
+      display: inline-block;
+      background: #000000;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-descargar:hover {
+      background: #333333;
+    }
+
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Descarga de Documento PDF</h1>
+</header>
+
+<div class="contenido">
+  <div class="card">
+    <h2>Manual de Mantenimiento</h2>
+    <p>Puedes visualizar una imagen preliminar del PDF y descargarlo:</p>
+
+    <!-- Imagen preliminar -->
+    <iframe src="MANUAL.pdf" style="width:100%; height:500px; border-radius:12px; margin-bottom:20px; border:none; box-shadow:0 4px 10px rgba(0,0,0,0.2);"></iframe>
+
+    <!-- Botón de descarga -->
+    <a class="btn-descargar" href="MANUAL.pdf" download>Descargar PDF</a>
+  </div>
+</div>
+<!-- BOTÓN REGRESAR AL INICIO -->
+<div style="text-align:center; margin-top:30px;">
+  <a href="index.html"
+     style="
+       background:#007bff;
+       color:white;
+       padding:14px 28px;
+       text-decoration:none;
+       font-size:1.1rem;
+       font-weight:bold;
+       border-radius:10px;
+       box-shadow:0 4px 12px rgba(0,0,0,0.2);
+       transition:0.3s;
+     ">
+     ⬅ Regresar al Inicio
+  </a>
+</div>
+
+
+<footer>
+  <p>&copy; 2025 Conalep 052</p>
+</footer>
+
+</body>
+</html>
